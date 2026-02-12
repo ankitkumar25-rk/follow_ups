@@ -1,0 +1,30 @@
+{
+  "name": "sage_backend",
+  "version": "1.0.0",
+  "description": "SAGE- Building the referral flows first component where we need an API to retrieven doctor lists that could be used on the referrals screen",
+  "keywords": [
+    "javascript",
+    "Sage"
+  ],
+  "license": "ISC",
+  "author": "Ankit",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js",
+    "seed": "node src/utils/seed.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "express-async-handler": "^1.2.0",
+    "mongodb": "^7.0.0",
+    "mongoose": "^9.0.1",
+    "mongoose-aggregate-paginate-v2": "^1.1.4",
+    "nodemon": "^3.1.11"
+  },
+  "devDependencies": {
+    "prettier": "^3.7.4"
+  }
+}
